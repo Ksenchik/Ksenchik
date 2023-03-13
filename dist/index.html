@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ksenchik</title>
+    <link rel="stylesheet" href="../dist/assets/fonts/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__modal">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#home" class="header__link">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="header__link">About me</a>
+                </li>
+                <li>
+                  <a href="#portfolio" class="header__link">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#contacts" class="header__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="home">
+      <div class="container">
+        <div class="home__content">
+          <div class="home__content-photo">
+            <img src="../dist/assets/img/photo.png" alt="" />
+          </div>
+          <div class="home__content-text">
+            <p>Hello!</p>
+            <p>I'm</p>
+            <p>Oksana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container">
+      <div class="about">
+        <div class="about__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+            incidunt, exercitationem hic magni dolorem architecto quasi ipsum
+            voluptatum! Molestias ad, praesentium officiis nobis cumque vel,
+            repudiandae nesciunt laborum, eaque explicabo voluptatibus
+            accusantium nulla exercitationem quia ducimus autem illum dolorum
+            iure tenetur nostrum dolores quod! Culpa adipisci ut nulla ducimus
+            porro?
+          </p>
+        </div>
+        <div class="about__photo">
+          <img src="../dist/assets/img/about-me.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="container">
+      <div class="portfolio">
+        <h2 class="portfolio__title">My works</h2>
+        <p class="portfolio__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+          esse porro officia voluptatum reprehenderit culpa explicabo alias
+          excepturi! Temporibus, fugit.
+        </p>
+
+        <div class="portfolio__card">
+          <h4 class="portfolio__card-title">Shelter</h4>
+          <div class="portfolio__card-photo">
+            <a aria-checked="portfolio__card-link" target="_blank" href="">
+              <img
+                class="portfolio__card-img"
+                src="../dist/assets/img/shelter.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <p class="portfolio__card-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+            corporis quas officiis sed fuga molestias sint asperiores ipsam
+            cupiditate sequi.
+          </p>
+          <a class="portfolio__card-code" target="_blank" href=""
+            >See code &#10142;</a
+          >
+        </div>
+        <button class="portfolio__card-ntn-right">
+          Next
+          <img src="../dist/assets/icon/arrow_right.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <h2 class="footer__title">My contacts</h2>
+        <div class="footer__social">
+          <a
+            class="footer__social-link"
+            href="https://telegram.im/@Ksenchik307"
+            target="_blank"
+            ><i class="fa-brands fa-telegram"></i> Telegram</a
+          >
+          <a
+            class="footer__social-link"
+            href="https://wa.me/375291122817"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+          >
+          <a
+            class="footer__social-link"
+            href="mailto:oksana.100@mail.ru"
+            target="_blank"
+            ><i class="fa-regular fa-envelope"></i> Email</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>

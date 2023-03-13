@@ -1,0 +1,12 @@
+$background-beige: #f8f3eb;
+$color-text: #30200c;
+$color-accent: #eccda7;
+$color-link-hover: #8b3d17;
+
+%photo-center{
+   width: 100%;
+   height: 100%;
+   -o-object-fit: cover;
+   object-fit: cover;
+   object-position: center; 
+}
