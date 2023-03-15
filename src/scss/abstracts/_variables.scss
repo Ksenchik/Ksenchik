@@ -10,3 +10,20 @@ $color-link-hover: #8b3d17;
    object-fit: cover;
    object-position: center; 
 }
+
+%btn{
+   background-color: $background-beige;
+   border: 1px solid $color-text;
+   border-radius: 3px;
+   padding: 5px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   &:hover {
+     background-color: $color-accent;
+   }
+}

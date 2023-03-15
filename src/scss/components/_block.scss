@@ -1,0 +1,23 @@
+.animation-x-l{
+   opacity: 0;
+   transform: translateX(-20px);
+   transition: all 1.5s ease;
+}
+
+.animation-x-r{
+   opacity: 0;
+   transform: translateX(20px);
+   transition: all 1.5s ease;
+}
+
+.animation-y{
+   opacity: 0;
+   transform: translateY(-20px);
+   transition: all 1.5s ease;
+}
+
+.el-show{
+   opacity: 1;
+   transform: translateX(0);
+   transform: translateY(0);
+}
