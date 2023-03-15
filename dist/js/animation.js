@@ -1,7 +1,5 @@
 export function animation(entry){
-   // console.log(entry)
-   if (entry) entry.forEach;
-   entry.forEach(change => {
+   if (entry) entry.forEach(change => {
       if(change.isIntersecting){
          change.target.classList.add('el-show');
       } else {
