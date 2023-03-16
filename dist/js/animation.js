@@ -17,10 +17,10 @@ const elements = [
   ...document.querySelectorAll(".animation-x-r"),
   ...document.querySelectorAll(".animation-y"),
   ...document.querySelectorAll(".animation-about"),
-  ...document.querySelectorAll(".about__photo-1"),
-  ...document.querySelectorAll(".about__photo-2"),
-  ...document.querySelectorAll(".about__photo-3"),
-  ...document.querySelectorAll(".about__photo-4")
+  ...document.querySelectorAll(".photo-1"),
+  ...document.querySelectorAll(".photo-2"),
+  ...document.querySelectorAll(".photo-3"),
+  ...document.querySelectorAll(".photo-4")
 ];
 
 for (let el of elements) {

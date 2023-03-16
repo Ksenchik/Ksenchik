@@ -1,23 +1,49 @@
-.animation-x-l{
-   opacity: 0;
-   transform: translateX(-150px);
-   transition: all 1.5s ease;
+.animation-x-l {
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: all 1.5s ease;
 }
 
-.animation-x-r{
-   opacity: 0;
-   transform: translateX(150px);
-   transition: all 1.5s ease;
+.animation-x-r {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 1.5s ease;
 }
 
-.animation-y{
-   opacity: 0;
-   transform: translateY(-80px);
-   transition: all 1.5s ease;
+.animation-y {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all 1.5s ease;
 }
 
-.el-show{
-   opacity: 1;
-   transform: translateX(0);
-   transform: translateY(0);
+.photo-1 {
+  opacity: 0;
+  rotate: -30deg;
+  transform: translateY(-50px);
+  transition: all 1s ease;
+}
+.photo-2 {
+  opacity: 0;
+  rotate: 30deg;
+  transform: translateX(50px);
+  transition: all 1.5s ease;
+}
+.photo-3 {
+  opacity: 0;
+  rotate: 30deg;
+  transform: translateX(-50px);
+  transition: all 2s ease;
+}
+.photo-4 {
+  opacity: 0;
+  rotate: -30deg;
+  transform: translateY(50px);
+  transition: all 2.5s ease;
+}
+
+.el-show {
+  opacity: 1;
+  rotate: 0deg;
+  transform: translateX(0);
+  transform: translateY(0);
 }
