@@ -20,7 +20,7 @@ const elements = [
   ...document.querySelectorAll(".photo-1"),
   ...document.querySelectorAll(".photo-2"),
   ...document.querySelectorAll(".photo-3"),
-  ...document.querySelectorAll(".photo-4")
+  ...document.querySelectorAll(".photo-4"),
 ];
 
 for (let el of elements) {
