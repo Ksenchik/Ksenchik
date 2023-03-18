@@ -1,5 +1,6 @@
 import { animation } from "./animation.js";
 import { burger } from "./burger.js";
+import { modalOpen } from "./modal.js";
 import { galleryLeft, galleryRight } from "./slider.js";
 
 function app() {
@@ -7,6 +8,7 @@ function app() {
   galleryRight();
   galleryLeft();
   animation();
+  modalOpen();
 }
 
 

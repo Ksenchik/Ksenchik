@@ -23,7 +23,7 @@ export const projectData = [
    {
       name: 'Online-store',
       image: 'assets/img/online-store.jpg',
-      link: 'https://rolling-scopes-school.github.io/ksenchik-JSFE2022Q3/songbird/dist/',
+      link: 'https://komarofff-ksenchik-online-store.netlify.app/',
       description: 'Adaptive layout, HTML, SCSS, JS',
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
    }
