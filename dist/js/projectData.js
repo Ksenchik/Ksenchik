@@ -26,5 +26,12 @@ export const projectData = [
       link: 'https://komarofff-ksenchik-online-store.netlify.app/',
       description: 'Adaptive layout, HTML, SCSS, JS',
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
+   },
+   {
+      name: 'Webovio',
+      image: 'assets/img/webovio.jpg',
+      link: 'https://ksenchik.github.io/webovio/index',
+      description: 'Adaptive layout, HTML, CSS',
+      code: 'https://github.com/Ksenchik/webovio'
    }
 ];

@@ -26,16 +26,27 @@
   border-radius: 5px;
   overflow: auto;
   z-index: 2;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
   @media (max-width: 768px){
    width: 280px;
    height: 500px;
   }
 }
 
+@keyframes animatetop {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
 .modal__close {
   position: absolute;
   right: 0;
-  top: -28px;
+  top: 0px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -45,7 +56,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  max-width: 512px;
+  max-width: 535px;
   margin: 0 auto;
   @media (max-width: 768px){
    grid-template-columns: 1fr;

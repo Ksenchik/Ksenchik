@@ -1,18 +1,22 @@
 import { projectData } from "./projectData.js";
 
 export function modalOpen() {
-  const buttonOpen = document.querySelector(".portfolio__gallery-see-all");
   const modal = document.querySelector(".modal");
-  const contentBody = document.querySelector("body");
+  const btn = document.querySelector(".portfolio__gallery-see-all");
+  const span = document.querySelector(".modal__close");
 
-  buttonOpen.onclick = function () {
-    modal.classList.add("active");
-    contentBody.classList.add("lock");
+  btn.onclick = function () {
+    modal.style.display = "block";
   };
 
-  modal.onclick = function () {
-    modal.classList.remove("active");
-    contentBody.classList.remove("lock");
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
   };
 }
 
@@ -29,7 +33,7 @@ export function modalWrite() {
     title.classList.add("modal__projects-name");
     a.classList.add("modal__projects-link");
     a.setAttribute("href", "somelink url");
-    a.setAttribute('target', '_blank');
+    a.setAttribute("target", "_blank");
     img.classList.add("modal__projects-img");
     img.setAttribute("src", "searchPic");
     p.classList.add("modal__projects-description");
