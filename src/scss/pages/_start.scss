@@ -31,16 +31,16 @@ body {
 }
 
 .container-text {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 5rem;
-   @media (max-width: 1000px) {
-     padding: 0 20px;
-   }
-   @media (max-width: 660px) {
-     padding: 0 10px;
-   }
- }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 660px) {
+    padding: 0 10px;
+  }
+}
 
 .home__content {
   display: flex;
@@ -92,8 +92,8 @@ body {
   }
 }
 
-.about-me{
-   padding: 5rem 0;
+.about-me {
+  padding: 5rem 0;
 }
 
 .about {
@@ -154,12 +154,11 @@ body {
 
 .portfolio {
   padding: 5rem 0;
-//   background-color: darken($background-beige, 3%);
-background-image: url(../../../dist/assets/img/keyboard.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+  background-image: url(../../../dist/assets/img/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .portfolio__title {
@@ -170,13 +169,47 @@ background-attachment: fixed;
   font-size: 2.5rem;
 }
 
+.portfolio__skills {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.portfolio__title-block {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
 .portfolio__li {
   font-size: 2.5rem;
   margin-bottom: 5px;
 }
 
+.portfolio__a {
+  text-decoration: none;
+  color: $color-text;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+.courses__certificate {
+  font-weight: 700;
+  border-bottom: 1px solid $color-text;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
 .portfolio__gallery {
-   padding: 5rem 0; 
+  padding: 5rem 0;
 }
 
 .swiper {
@@ -298,41 +331,6 @@ background-attachment: fixed;
   }
 }
 
-.courses {
-   padding: 5rem 0;
-   background-color: darken($background-beige, 3%);
- }
-
-.courses__title {
-  font-size: 4.5rem;
-  margin: 0 auto;
-}
-
-.courses__li {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-}
-
-.courses__a {
-  text-decoration: none;
-  color: $color-text;
-  margin-bottom: 5px;
-  transition: all 0.3s ease;
-  &:hover{
-   color: $color-link-hover;
-  }
-}
-
-.courses__certificate {
-  font-weight: 700;
-  border-bottom: 1px solid $color-text;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  &:hover{
-   color: $color-link-hover;
-  }
-}
-
 .courses__modal {
   display: none;
   position: fixed;
@@ -352,7 +350,6 @@ background-attachment: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
-  //   height: 80%;
   text-align: center;
   background-color: transparent;
   z-index: 2;
