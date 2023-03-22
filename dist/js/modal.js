@@ -34,15 +34,12 @@ export function modalOpen() {
     if (event.target == modal) {
       modal.style.display = "none";
       contentBody.classList.remove("lock");
-    }
-  };
-
-  window.onclick = function (event) {
-   if (event.target == modalSF) {
+    };
+    if (event.target == modalSF) {
       modalSF.style.display = "none";
      contentBody.classList.remove("lock");
    }
- };
+  };
 }
 
 let container = document.querySelector(".modal__projects");

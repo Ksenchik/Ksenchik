@@ -312,12 +312,20 @@ body {
   text-decoration: none;
   color: $color-text;
   margin-bottom: 5px;
+  transition: all 0.3s ease;
+  &:hover{
+   color: $color-link-hover;
+  }
 }
 
 .courses__certificate {
   font-weight: 700;
   border-bottom: 1px solid $color-text;
   cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+   color: $color-link-hover;
+  }
 }
 
 .courses__modal {
