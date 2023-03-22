@@ -154,7 +154,12 @@ body {
 
 .portfolio {
   padding: 5rem 0;
-  background-color: darken($background-beige, 3%);
+//   background-color: darken($background-beige, 3%);
+background-image: url(../../../dist/assets/img/keyboard.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
 
 .portfolio__title {
