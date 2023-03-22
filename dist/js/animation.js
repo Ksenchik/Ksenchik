@@ -3,8 +3,6 @@ export function animation(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
         change.target.classList.add("el-show");
-      } else {
-        change.target.classList.remove("el-show");
       }
     });
 }
