@@ -3,8 +3,11 @@ import { projectData } from "./projectData.js";
 
 export function modalOpen() {
   const modal = document.querySelector(".modal");
+  const modalSF = document.querySelector(".courses__modal");
   const btn = document.querySelector(".portfolio__gallery-see-all");
-  const span = document.querySelector(".modal__close");
+  const btnSF = document.querySelector(".courses__certificate");
+  const close = document.querySelector(".modal__close");
+  const closeSF = document.querySelector(".courses__modal-close");
   const contentBody = document.querySelector("body");
 
   btn.onclick = function () {
@@ -12,10 +15,20 @@ export function modalOpen() {
     contentBody.classList.toggle("lock");
   };
 
-  span.onclick = function () {
+  btnSF.onclick = function () {
+   modalSF.style.display = "block";
+   contentBody.classList.toggle("lock");
+ };
+
+  close.onclick = function () {
     modal.style.display = "none";
     contentBody.classList.remove("lock");
   };
+
+  closeSF.onclick = function () {
+   modalSF.style.display = "none";
+   contentBody.classList.remove("lock");
+ };
 
   window.onclick = function (event) {
     if (event.target == modal) {
@@ -23,6 +36,13 @@ export function modalOpen() {
       contentBody.classList.remove("lock");
     }
   };
+
+  window.onclick = function (event) {
+   if (event.target == modalSF) {
+      modalSF.style.display = "none";
+     contentBody.classList.remove("lock");
+   }
+ };
 }
 
 let container = document.querySelector(".modal__projects");

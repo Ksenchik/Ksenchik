@@ -1,5 +1,6 @@
 import { projectData } from "./projectData.js";
 import { create } from "./create.js";
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
 const wrap = document.querySelector(".swiper-wrapper");
 
@@ -36,7 +37,7 @@ export function createSlider() {
   }
 }
 
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
 
 const swiper = new Swiper('.swiper', {
    navigation: {
@@ -45,9 +46,7 @@ const swiper = new Swiper('.swiper', {
    },
    speed: 500,
    spaceBetween: 100,
-   // spaceBetween: 30,
    slidesPerView: 1,
-   // autoHeight: false,
    loop: true,
 });
 
