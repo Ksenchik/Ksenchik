@@ -161,29 +161,34 @@ body {
 }
 
 .slider{
-   width: 700px;
-   overflow: hidden;
-   @media (max-width: 768px){
-      width: 280px;
-   }
+   // width: 700px;
+   // overflow: hidden;
+   // @media (max-width: 768px){
+   //    width: 280px;
+   // }
 }
 
 .slider-line{
-   position: relative;
-   display: flex;
-   left: 0;
-   transition: all 0.5s ease;
+   // position: relative;
+   // display: flex;
+   // left: 0;
+   // transition: all 0.5s ease;
 }
+
+.swiper {
+   width: 100%;
+   height: auto;
+ }
 
 .portfolio__card {
   position: relative;
   margin: 50px auto 0;
   border-radius: 5px;
-  width: 700px;
-  min-height: 550px;
+//   width: 700px;
+//   min-height: 550px;
   @media (max-width: 768px) {
-    width: 280px;
-    min-height: 270px;
+   //  width: 280px;
+   //  min-height: 270px;
   }
 }
 
@@ -194,15 +199,8 @@ body {
 }
 
 .portfolio__card-photo {
-  border: 1px solid $color-text;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
-  width: 698px;
-  height: 387px;
-  @media (max-width: 768px) {
-    width: 278px;
-    height: 160px;
-  }
 }
 
 .portfolio__card-img {
@@ -215,11 +213,9 @@ body {
 
 .portfolio__card-description {
   font-size: 1.8rem;
-  margin: 15px 0 25px;
-  min-height: 63px;
+  margin: 15px 0 15px;
   @media (max-width: 768px) {
-    margin: 5px 0 15px;
-    min-height: 45px;
+    margin: 5px 0 5px;
   }
 }
 
@@ -335,6 +331,7 @@ body {
   text-decoration: none;
   color: $color-text;
   padding: 5px 0;
+  margin-right: auto;
   transition: all 0.3s ease;
   &:hover {
     color: $color-link-hover;

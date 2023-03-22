@@ -13,9 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/main.min.css" />
   </head>
-  <body>
+  <body class="vertical-scroll">
     <header id="home" class="header">
       <div class="container">
         <div class="header__body">
@@ -132,22 +133,24 @@
     </div>
 
     <div class="portfolio__gallery">
-      <div class="portfolio__card animation-y">
-
-        <div class="slider">
-           <div class="slider-line"></div>
-        </div>
-
-
-        <div class="portfolio__card-ntn">
-          <button class="portfolio__card-ntn-left">
-            <img src="../dist/assets/icon/arrow_right.svg" alt="" />
-          </button>
-          <button class="portfolio__card-ntn-right">
-            <img src="../dist/assets/icon/arrow_right.svg" alt="" />
-          </button>
-        </div>
-        <button class="portfolio__gallery-see-all">See all projects</button>
+      <div class="container">
+         <div class="portfolio__card animation-y">
+   
+           <div class="swiper">
+              <div class="swiper-wrapper"></div>
+           </div>
+   
+   
+           <div class="portfolio__card-ntn">
+             <button class="portfolio__card-ntn-left">
+               <img src="../dist/assets/icon/arrow_right.svg" alt="" />
+             </button>
+             <button class="portfolio__card-ntn-right">
+               <img src="../dist/assets/icon/arrow_right.svg" alt="" />
+             </button>
+           </div>
+           <button class="portfolio__gallery-see-all">See all projects</button>
+         </div>
       </div>
     </div>
 

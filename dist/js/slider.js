@@ -1,11 +1,11 @@
 import { projectData } from "./projectData.js";
 import { create } from "./create.js";
 
-const wrap = document.querySelector(".slider-line");
+const wrap = document.querySelector(".swiper-wrapper");
 
 export function createSlider() {
   for (let i = 0; i < projectData.length; i++) {
-    const item = create("div", "slider-item");
+    const item = create("div", "swiper-slide");
     const title = create("h4", "portfolio__card-title", {
       innerHTML: projectData[i].name,
     });
@@ -36,33 +36,62 @@ export function createSlider() {
   }
 }
 
-let offset = 0;
-let widthItem = 0;
-if (document.documentElement.clientWidth < 768) {
-  widthItem = 280;
-} else {
-  widthItem = 700;
-}
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
-const sliderLine = document.querySelector(".slider-line");
-sliderLine.style.width = (widthItem * projectData.length) + 'px';
+const swiper = new Swiper('.swiper', {
+   navigation: {
+      nextEl: '.portfolio__card-ntn-right',
+      prevEl: '.portfolio__card-ntn-left'
+   },
+   speed: 500,
+   spaceBetween: 100,
+   // spaceBetween: 30,
+   slidesPerView: 1,
+   // autoHeight: false,
+   loop: true,
+});
 
-document
-  .querySelector(".portfolio__card-ntn-right")
-  .addEventListener("click", function () {
-    offset = offset + widthItem;
-    if (offset > widthItem * (projectData.length - 1)) {
-      offset = 0;
-    }
-    sliderLine.style.left = -offset + "px";
-  });
 
-document
-  .querySelector(".portfolio__card-ntn-left")
-  .addEventListener("click", function () {
-    offset = offset - widthItem;
-    if (offset < 0) {
-      offset = widthItem * (projectData.length - 1);
-    }
-    sliderLine.style.left = -offset + "px";
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let offset = 0;
+// let widthItem = 0;
+// if (document.documentElement.clientWidth < 768) {
+//   widthItem = 280;
+// } else {
+//   widthItem = 700;
+// }
+
+// const sliderLine = document.querySelector(".slider-line");
+// sliderLine.style.width = (widthItem * projectData.length) + 'px';
+
+// document
+//   .querySelector(".portfolio__card-ntn-right")
+//   .addEventListener("click", function () {
+//     offset = offset + widthItem;
+//     if (offset > widthItem * (projectData.length - 1)) {
+//       offset = 0;
+//     }
+//     sliderLine.style.left = -offset + "px";
+//   });
+
+// document
+//   .querySelector(".portfolio__card-ntn-left")
+//   .addEventListener("click", function () {
+//     offset = offset - widthItem;
+//     if (offset < 0) {
+//       offset = widthItem * (projectData.length - 1);
+//     }
+//     sliderLine.style.left = -offset + "px";
+//   });
