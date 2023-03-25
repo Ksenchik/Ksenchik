@@ -1,8 +1,8 @@
 <h1 align="center">Hi there, I'm <a href="https://ksenchik.github.io/Ksenchik/dist/" target="_blank">Ksenchik</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h4 align="center">I am a frontend web developer.</h4>
+<h3 align="center">I am a frontend web developer.</h3>
 
-<h6>I do not stop there, I continue to study new technologies. My strengths are attention to detail, timing, perseverance, high responsibility.</h6>
+<h4>I do not stop there, I continue to study new technologies. My strengths are attention to detail, timing, perseverance, high responsibility.</h4>
 
 <h3 align="center">Languages and Tools:</h3>
 <p align="center"> 
