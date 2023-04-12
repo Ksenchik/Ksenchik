@@ -21,7 +21,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
-  overflow: hidden;
   @media (max-width: 1000px) {
     padding: 0 20px;
   }
@@ -40,6 +39,10 @@ body {
   @media (max-width: 660px) {
     padding: 0 10px;
   }
+}
+
+.main{
+   overflow: hidden;
 }
 
 .home__content {
