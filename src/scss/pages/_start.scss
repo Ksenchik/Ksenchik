@@ -41,8 +41,8 @@ body {
   }
 }
 
-.main{
-   overflow: hidden;
+.main {
+  overflow: hidden;
 }
 
 .home__content {
@@ -196,7 +196,13 @@ body {
   color: $color-text;
   margin-bottom: 5px;
   transition: all 0.3s ease;
-  &:hover {
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+@media (hover: hover) {
+  .portfolio__a:hover {
     color: $color-link-hover;
   }
 }
@@ -206,7 +212,13 @@ body {
   border-bottom: 1px solid $color-text;
   cursor: pointer;
   transition: all 0.3s ease;
-  &:hover {
+  &:active {
+    color: $color-link-hover;
+  }
+}
+
+@media (hover: hover) {
+  .courses__certificate:hover {
     color: $color-link-hover;
   }
 }
@@ -240,7 +252,10 @@ body {
 .portfolio__card-img {
   @extend %photo-center;
   transition: all 0.5s ease;
-  &:hover {
+}
+
+@media (hover: hover) {
+  .portfolio__card-img:hover {
     scale: 1.1;
   }
 }
@@ -261,11 +276,17 @@ body {
   text-decoration: none;
   color: $color-text;
   transition: all 0.3s ease;
-  &:hover {
-    color: $color-link-hover;
+  &:active {
+    color: $color-link-active;
   }
   @media (max-width: 768px) {
     margin-bottom: 5px;
+  }
+}
+
+@media (hover: hover) {
+  .portfolio__card-code:hover {
+    color: $color-link-hover;
   }
 }
 
@@ -416,7 +437,13 @@ body {
   padding: 5px 0;
   margin-right: auto;
   transition: all 0.3s ease;
-  &:hover {
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+@media (hover: hover) {
+  .footer__social-link:hover {
     color: $color-link-hover;
   }
 }
