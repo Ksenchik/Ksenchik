@@ -22,10 +22,16 @@ $color-link-active: #3a1a0a;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  &:hover {
-    background-color: $color-accent;
-  }
+//   &:hover {
+//     background-color: $color-accent;
+//   }
   &:active {
     background-color: darken($color-accent, 10%);
   }
 }
+
+@media (hover: hover) {
+   %btn:hover {
+      background-color: $color-accent;
+   }
+ }
