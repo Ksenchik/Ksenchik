@@ -16,7 +16,7 @@ export const projectData = [
    {
       name: 'Songbird',
       image: 'assets/img/songbird.jpg',
-      link: 'https://rolling-scopes-school.github.io/ksenchik-JSFE2022Q3/songbird/dist/',
+      link: 'https://ksenchik.github.io/Songbird/songbird/dist/',
       description: 'Adaptive layout, custom design, HTML, SCSS, JS, SPA routing, game logic',
       code: 'https://github.com/Ksenchik/Songbird/tree/main/songbird'
    },
