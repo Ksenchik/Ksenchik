@@ -254,6 +254,7 @@ body {
 }
 
 .portfolio__card-img {
+  display: block;
   @extend %photo-center;
   transition: all 0.5s ease;
 }
