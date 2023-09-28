@@ -166,6 +166,7 @@ body {
 
 .portfolio__title {
   font-size: 4.5rem;
+  margin-bottom: 0;
 }
 
 .portfolio__text {
@@ -241,11 +242,14 @@ body {
 .portfolio__card-title {
   font-size: 3.5rem;
   font-weight: 700;
+  text-align: center;
   margin: 20px 0 10px;
 }
 
 .portfolio__card-photo {
   border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -262,6 +266,7 @@ body {
 
 .portfolio__card-description {
   font-size: 2.2rem;
+  text-align: center;
   margin: 15px 0 20px;
   @media (max-width: 768px) {
     margin: 5px 0 5px;
