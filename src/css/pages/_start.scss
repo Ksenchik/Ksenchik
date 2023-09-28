@@ -157,7 +157,7 @@ body {
 
 .portfolio {
   padding: 5rem 0;
-  background-image: url(../../dist/assets/img/keyboard.jpg);
+  background-image: url(../../assets/img/keyboard.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -261,8 +261,8 @@ body {
 }
 
 .portfolio__card-description {
-  font-size: 1.8rem;
-  margin: 15px 0 15px;
+  font-size: 2.2rem;
+  margin: 15px 0 20px;
   @media (max-width: 768px) {
     margin: 5px 0 5px;
   }
@@ -270,9 +270,10 @@ body {
 
 .portfolio__card-code {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   bottom: 10px;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
   text-decoration: none;
   color: $color-text;
   transition: all 0.3s ease;
@@ -293,7 +294,7 @@ body {
 .portfolio__card-ntn {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   @media (max-width: 768px) {
     margin-bottom: 10px;
   }
@@ -302,15 +303,15 @@ body {
 .portfolio__card-ntn-left,
 .portfolio__card-ntn-right {
   @extend %btn;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   @media (max-width: 1000px) {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
   @media (max-width: 768px) {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -319,13 +320,13 @@ body {
     height: 20px;
     width: 20px;
     rotate: 180deg;
-    @media (max-width: 1000px) {
-      width: 15px;
-      height: 15px;
-    }
+   //  @media (max-width: 1000px) {
+   //    width: 15px;
+   //    height: 15px;
+   //  }
     @media (max-width: 768px) {
-      width: 10px;
-      height: 10px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -334,13 +335,14 @@ body {
   img {
     height: 20px;
     width: 20px;
-    @media (max-width: 1000px) {
-      width: 15px;
-      height: 15px;
-    }
+
+   //  @media (max-width: 1000px) {
+   //    width: 15px;
+   //    height: 15px;
+   //  }
     @media (max-width: 768px) {
-      width: 10px;
-      height: 10px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -348,10 +350,10 @@ body {
 .portfolio__gallery-see-all {
   @extend %btn;
   border-radius: 5px !important;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   margin-bottom: 5rem;
   @media (max-width: 768px) {
-    padding: 2px 5px;
+   padding: 10px 15px;
   }
 }
 

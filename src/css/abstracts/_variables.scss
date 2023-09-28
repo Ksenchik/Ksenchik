@@ -1,6 +1,6 @@
 $background-beige: #f8f3eb;
 $color-text: #30200c;
-$color-accent: #eccda7;
+$color-accent: #EBDCC5;
 $color-link-hover: #8b3d17;
 $color-link-active: #3a1a0a;
 
@@ -13,22 +13,22 @@ $color-link-active: #3a1a0a;
 }
 
 %btn {
-  background-color: $background-beige;
+  background-color: $color-accent;
   border: 1px solid $color-text;
   border-radius: 50%;
-  padding: 5px 10px;
+  padding: 15px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
   &:active {
-    background-color: darken($color-accent, 10%);
+    background-color: darken($color-accent, 20%);
   }
 }
 
 @media (hover: hover) {
    %btn:hover {
-      background-color: $color-accent;
+      background-color: darken($color-accent, 7%);
    }
  }
