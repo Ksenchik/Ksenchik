@@ -5,7 +5,14 @@ export const projectData = [
       link: 'https://komarofff-ksenchik-online-store.netlify.app/',
       description: 'Adaptive layout, HTML, SCSS, JS',
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
-   },   
+   },
+   {
+    name: 'Interno',
+    image: 'assets/img/interno.jpg',
+    link: 'https://ksenchik.github.io/Interno/dist/',
+    description: 'Adaptive layout, Pixel perfect, HTML, SCSS, JS, UI kit',
+    code: 'https://github.com/Ksenchik/Interno'
+   }, 
    {
       name: 'Songbird',
       image: 'assets/img/songbird.jpg',
