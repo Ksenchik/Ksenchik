@@ -1,28 +1,28 @@
 export const projectData = [   
    {
       name: 'Online-store',
-      image: 'assets/img/online-store.jpg',
+      image: 'assets/img/K&K.gif',
       link: 'https://komarofff-ksenchik-online-store.netlify.app/',
       description: 'Adaptive layout, HTML, SCSS, JS',
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
    },
    {
     name: 'Interno',
-    image: 'assets/img/interno.jpg',
+    image: 'assets/img/Interno.gif',
     link: 'https://ksenchik.github.io/Interno/dist/',
     description: 'Adaptive layout, Pixel perfect, HTML, SCSS, JS, UI kit',
     code: 'https://github.com/Ksenchik/Interno'
    }, 
    {
       name: 'Songbird',
-      image: 'assets/img/songbird.jpg',
+      image: 'assets/img/songBird.gif',
       link: 'https://ksenchik.github.io/Songbird/songbird/dist/',
       description: 'Adaptive layout, custom design, HTML, SCSS, JS, SPA routing, game logic',
       code: 'https://github.com/Ksenchik/Songbird/tree/main/songbird'
    },   
    {
       name: 'Online-zoo',
-      image: 'assets/img/online-zoo.jpg',
+      image: 'assets/img/online-zoo.gif',
       link: 'https://ksenchik.github.io/PetStory-online/online-zoo/pages/main/',
       description: 'Adaptive layout, Pixel perfect, HTML, SCSS, JS, jQuery, validation HTML form, JS functional',
       code: 'https://github.com/Ksenchik/PetStory-online/tree/main/online-zoo'
