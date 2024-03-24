@@ -7,6 +7,13 @@ export const projectData = [
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
    },
    {
+    name: 'УОМ',
+    image: 'assets/img/uom.jpg',
+    link: 'https://ksenchik.github.io/university/dist/',
+    description: 'Adaptive layout, HTML, UI kit, SCSS, JS (burger, modal, swiper, gallery)',
+    code: 'https://github.com/Ksenchik/university'
+   }, 
+   {
     name: 'Interno',
     image: 'assets/img/Interno.gif',
     link: 'https://ksenchik.github.io/Interno/dist/',
