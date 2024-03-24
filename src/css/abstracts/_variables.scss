@@ -15,20 +15,80 @@ $color-link-active: #3a1a0a;
 %btn {
   background-color: $color-accent;
   border: 1px solid $color-text;
-  border-radius: 50%;
-  padding: 15px 20px;
+  border-radius: 50px;
+  padding: 15px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  &:hover{
+    background-color: darken($color-accent, 7%);
+    border: 1px solid $color-link-hover;
+    color: #8b3d17;
+  }
   &:active {
     background-color: darken($color-accent, 20%);
   }
 }
 
+%btn-circle{
+  background-color: $color-accent;
+  border: 1px solid $color-text;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 60px;
+  &:hover{
+    background-color: darken($color-accent, 7%);
+    border: 1px solid $color-link-hover;
+  }
+  &:hover svg{
+    fill: #8b3d17;
+  }
+  &:active {
+    background-color: darken($color-accent, 20%);
+  }
+  svg{
+    fill: $color-text;
+    width: 70%;
+    height: 70%;
+  }
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (hover: hover) {
-   %btn:hover {
-      background-color: darken($color-accent, 7%);
-   }
- }
+  %btn:hover {
+     background-color: darken($color-accent, 7%);
+  }
+}
+
+%link-underline{
+  text-decoration:none;
+  display: inline-block; 
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  color: $color-text;
+  &:after{
+    display: block; 
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: $color-link-hover;
+    transition: width 0.4s ease-in-out;
+  }
+  &:hover::after,
+  &:focus::after{
+    width: 100%;
+  }
+  &:hover{
+    color: $color-link-hover;
+  }
+}
