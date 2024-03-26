@@ -8,7 +8,7 @@ export const projectData = [
    },
    {
     name: 'УОМ',
-    image: 'assets/img/uom.jpg',
+    image: 'assets/img/uom.gif',
     link: 'https://ksenchik.github.io/university/dist/',
     description: 'Adaptive layout, HTML, UI kit, SCSS, JS (burger, modal, swiper, gallery)',
     code: 'https://github.com/Ksenchik/university'
