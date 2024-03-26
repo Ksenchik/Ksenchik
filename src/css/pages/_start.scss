@@ -96,12 +96,13 @@ body {
 }
 
 .about-me {
-  padding: 5rem 0;
+  background-color: #fff;
 }
 
 .about {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   @media (max-width: 660px) {
     flex-direction: column;
@@ -156,17 +157,11 @@ body {
 }
 
 .portfolio {
-  padding: 5rem 0;
   background-image: url(../../assets/img/keyboard.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.portfolio__title {
-  font-size: 4.5rem;
-  margin-bottom: 0;
 }
 
 .portfolio__text {
@@ -222,10 +217,6 @@ body {
   .courses__certificate:hover {
     color: $color-link-hover;
   }
-}
-
-.portfolio__gallery {
-  padding: 5rem 0;
 }
 
 .swiper {
@@ -343,7 +334,6 @@ body {
 .portfolio__gallery-see-all {
   @extend %btn;
   font-size: 2.4rem;
-  margin-bottom: 5rem;
   @media (max-width: 768px) {
    padding: 10px 25px;
   }
@@ -410,12 +400,8 @@ body {
   border: 1px solid $color-text;
 }
 
-.footer {
-  padding: 2rem 0 7rem;
-}
-
-.footer__title {
-  font-size: 4.5rem;
+.footer{
+  background-color: #fff;
 }
 
 .footer__social {
@@ -423,7 +409,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  
+  margin-top: 30px;
 }
 
 .footer__social-wrap{
@@ -451,23 +437,7 @@ body {
   }
 }
 
-// .footer__social-link:after {
-//   display: block;
-//   content: "";
-//   height: 3px;
-//   width: 0%;
-//   background-color: $color-link-hover;
-//   transition: width 0.3s ease-in-out; 
-//   }
-// .footer__social-link:hover:after,
-// .footer__social-link:focus:after {
-//   width: 100%;
-// }
-
 @media (hover: hover) {
-  // .footer__social-link:hover {
-  //   color: $color-link-hover;
-  // }
   .footer__social-link:hover svg{
     fill: $color-link-hover;
   }

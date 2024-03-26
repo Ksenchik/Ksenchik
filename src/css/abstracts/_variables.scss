@@ -1,8 +1,12 @@
-$background-beige: #f8f3eb;
-$color-text: #30200c;
+$background-beige: #FEEFDD;
+$color-text: #201E1F;
 $color-accent: #EBDCC5;
-$color-link-hover: #8b3d17;
+$color-link-hover: #FF4000;
 $color-link-active: #3a1a0a;
+$color-btn: #FAAA8D;
+$color-btn-hover: #FF4000;
+$color-btn-text: #3a1a0a;
+$color-btn-text-hover: #fff;
 
 %photo-center {
   width: 100%;
@@ -13,8 +17,9 @@ $color-link-active: #3a1a0a;
 }
 
 %btn {
-  background-color: $color-accent;
-  border: 1px solid $color-text;
+  background-color: $color-btn;
+  color: $color-btn-text;
+  border: none;
   border-radius: 50px;
   padding: 15px 40px;
   display: flex;
@@ -22,19 +27,18 @@ $color-link-active: #3a1a0a;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  &:hover{
-    background-color: darken($color-accent, 7%);
-    border: 1px solid $color-link-hover;
-    color: #8b3d17;
-  }
+  // &:hover{
+  //   background-color: $color-btn-hover;
+  //   color: $color-btn-text-hover;
+  // }
   &:active {
-    background-color: darken($color-accent, 20%);
+    background-color: darken($color-btn-hover, 20%);
   }
 }
 
 %btn-circle{
-  background-color: $color-accent;
-  border: 1px solid $color-text;
+  background-color: $color-btn;
+  border: none;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -43,20 +47,20 @@ $color-link-active: #3a1a0a;
   transition: all 0.3s ease;
   width: 60px;
   height: 60px;
-  &:hover{
-    background-color: darken($color-accent, 7%);
-    border: 1px solid $color-link-hover;
-  }
-  &:hover svg{
-    fill: #8b3d17;
-  }
+  // &:hover{
+  //   background-color: $color-btn-hover;
+  // }
+  // &:hover svg{
+  //   fill: $color-btn-text-hover;
+  // }
   &:active {
-    background-color: darken($color-accent, 20%);
+    background-color: darken($color-btn-hover, 20%);
   }
   svg{
-    fill: $color-text;
+    fill: $color-btn-text;
     width: 70%;
     height: 70%;
+    transition: all 0.3s ease;
   }
   @media (max-width: 768px) {
     width: 40px;
@@ -65,8 +69,15 @@ $color-link-active: #3a1a0a;
 }
 
 @media (hover: hover) {
-  %btn:hover {
-     background-color: darken($color-accent, 7%);
+  %btn:hover{
+    background-color: $color-btn-hover;
+    color: $color-btn-text-hover;
+  }
+  %btn-circle:hover{
+    background-color: $color-btn-hover;
+  }
+  %btn-circle:hover svg{
+    fill: $color-btn-text-hover;
   }
 }
 
