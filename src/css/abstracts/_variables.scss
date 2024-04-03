@@ -16,6 +16,19 @@ $color-btn-text-hover: #fff;
   object-position: center;
 }
 
+@media (hover: hover) {
+  %btn:hover{
+    background-color: $color-btn-hover;
+    color: $color-btn-text-hover;
+  }
+  %btn-circle:hover{
+    background-color: $color-btn-hover;
+  }
+  %btn-circle:hover svg{
+    fill: $color-btn-text-hover;
+  }
+}
+
 %btn {
   background-color: $color-btn;
   color: $color-btn-text;
@@ -68,18 +81,7 @@ $color-btn-text-hover: #fff;
   }
 }
 
-@media (hover: hover) {
-  %btn:hover{
-    background-color: $color-btn-hover;
-    color: $color-btn-text-hover;
-  }
-  %btn-circle:hover{
-    background-color: $color-btn-hover;
-  }
-  %btn-circle:hover svg{
-    fill: $color-btn-text-hover;
-  }
-}
+
 
 %link-underline{
   text-decoration:none;
