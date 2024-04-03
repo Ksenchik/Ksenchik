@@ -3,10 +3,10 @@ import { burger } from "./burger.js";
 import { modalOpen, modalWrite } from "./modal.js";
 import { createSlider } from "./slider.js";
 
-window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const preloader = document.querySelector('.loader');
-
-  preloader.style.display = 'none';
+  app(); 
+  preloader.style.display = 'none'; 
 });
 
 function app() {
@@ -16,5 +16,3 @@ function app() {
   modalWrite();
   createSlider();
 }
-
-app();
