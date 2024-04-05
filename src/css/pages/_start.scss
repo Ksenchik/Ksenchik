@@ -96,7 +96,7 @@ body {
 }
 
 .about-me {
-  background-color: #F7EFE5;
+  background-color: $background-beige-2;
 }
 
 .about {
@@ -271,7 +271,6 @@ body {
 .portfolio__card-code {
   display: inline-block;
   margin-bottom: 20px;
-  bottom: 10px;
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
@@ -402,7 +401,7 @@ body {
 }
 
 .footer{
-  background-color: #F7EFE5;
+  background-color: $background-beige-2;
 }
 
 .footer__social {
