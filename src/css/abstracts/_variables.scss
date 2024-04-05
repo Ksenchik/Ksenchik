@@ -1,4 +1,4 @@
-$background-beige: #FEEFDD;
+$background-beige: #FFFBF5;
 $color-text: #201E1F;
 $color-accent: #EBDCC5;
 $color-link-hover: #FF4000;
@@ -26,6 +26,12 @@ $color-btn-text-hover: #fff;
   }
   %btn-circle:hover svg{
     fill: $color-btn-text-hover;
+  }
+  %link-underline:hover{
+    color: $color-link-hover;
+  }
+  %link-underline:hover::after{
+    width: 100%;
   }
 }
 
@@ -81,8 +87,6 @@ $color-btn-text-hover: #fff;
   }
 }
 
-
-
 %link-underline{
   text-decoration:none;
   display: inline-block; 
@@ -97,11 +101,7 @@ $color-btn-text-hover: #fff;
     background-color: $color-link-hover;
     transition: width 0.4s ease-in-out;
   }
-  &:hover::after,
   &:focus::after{
     width: 100%;
-  }
-  &:hover{
-    color: $color-link-hover;
-  }
+  }  
 }
