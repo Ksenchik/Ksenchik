@@ -7,17 +7,24 @@ export const projectData = [
       code: 'https://github.com/Ksenchik/Online-store/tree/develop/public/template'
    },
    {
+      name: 'Web-development',
+      image: 'assets/img/Web-development.gif',
+      link: 'https://ksenchik.github.io/Web-development/',
+      description: 'Adaptive layout, HTML, Tailwind CSS, SVG sprite, JS (burger, drop-down, modal, filter, gallery)',
+      code: 'https://github.com/Ksenchik/Web-development'
+   },
+   {
     name: 'УОМ',
     image: 'assets/img/uom2.gif',
     link: 'https://ksenchik.github.io/university/dist/',
-    description: 'Adaptive layout, HTML, UI kit, SCSS, JS (burger, modal, swiper, gallery)',
+    description: 'Adaptive layout, HTML, UI kit, SCSS, SVG sprite, JS (burger, modal, swiper, gallery)',
     code: 'https://github.com/Ksenchik/university'
    }, 
    {
     name: 'Interno',
     image: 'assets/img/Interno.gif',
     link: 'https://ksenchik.github.io/Interno/dist/',
-    description: 'Adaptive layout, Pixel perfect, HTML, SCSS, JS, UI kit',
+    description: 'Adaptive layout, Pixel perfect, HTML, SCSS, SVG sprite, JS, UI kit',
     code: 'https://github.com/Ksenchik/Interno'
    }, 
    {
