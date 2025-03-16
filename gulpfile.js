@@ -134,6 +134,11 @@ function svg(){
    .pipe(gulp.dest(paths.svg.dest))
 }
 
+function vendor() {
+    return gulp.src('src/vendor/**/*')
+        .pipe(gulp.dest('dist/vendor'));
+ }
+
 function watch(){
    browserSync.init({
       server: {
@@ -147,7 +152,7 @@ function watch(){
    gulp.watch(paths.img.src, img)
 }
 
-const build = gulp.series(clean, html, gulp.parallel(styles, scripts, img), cleanSvg, watch)
+const build = gulp.series(clean, html, gulp.parallel(styles, scripts, img, vendor), cleanSvg, watch)
 
 // exports.clean = clean
 // exports.cleanSvg = cleanSvg
