@@ -1,43 +1,26 @@
 import { projectData } from "./projectData.js";
 import { create } from "./create.js";
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 
 const wrap = document.querySelector(".swiper-wrapper");
 
 export function createSlider() {
   for (let i = 0; i < projectData.length; i++) {
-    const item = create("div", "swiper-slide");
-    const title = create("h4", "portfolio__card-title", {
-      innerHTML: projectData[i].name,
-    });
-    const wrapPhoto = create("div", "portfolio__card-photo");
-    const aPhoto = create("a", "portfolio__card-link", {
-      href: projectData[i].link,
-    });
-    aPhoto.setAttribute("target", "_blank");
-    const img = create("img", "portfolio__card-img", {
-      src: projectData[i].image,
-    });
-    const pDescription = create("p", "portfolio__card-description", {
-      innerHTML: projectData[i].description,
-    });
-    const aCode = create("a", "portfolio__card-code", {
-      href: projectData[i].code,
-    });
-    aCode.setAttribute("target", "_blank");
-    aCode.innerHTML = "See code &#10142;";
+      const item = create("div", "swiper-slide");
+
+      item.innerHTML = `
+      <h4 class="portfolio__card-title">${projectData[i].name}</h4>
+      <div class="portfolio__card-photo">
+          <a class="portfolio__card-link" href="${projectData[i].link}" target="_blank">
+              <img class="portfolio__card-img" src="${projectData[i].image}">
+          </a>
+      </div>
+      <p class="portfolio__card-description">${projectData[i].description}</p>
+      <a class="portfolio__card-code" href="${projectData[i].code}" target="_blank">See code &#10142;</a>
+    `;
 
     wrap.append(item);
-    item.append(title);
-    item.append(wrapPhoto);
-    wrapPhoto.append(aPhoto);
-    aPhoto.append(img);
-    item.append(pDescription);
-    item.append(aCode);
   }
 }
-
-
 
 const swiper = new Swiper('.swiper', {
    navigation: {
