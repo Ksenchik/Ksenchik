@@ -71,10 +71,12 @@ body {
     width: 300px;
     height: 300px;
   }
+
   @media (max-width: 660px) {
     width: 250px;
     height: 250px;
   }
+
   img {
     @extend %photo-center;
   }
