@@ -76,12 +76,14 @@ $color-btn-text-hover: #fff;
   &:active {
     background-color: darken($color-btn-hover, 20%);
   }
+
   svg{
     fill: $color-btn-text;
     width: 70%;
     height: 70%;
     transition: all 0.3s ease;
   }
+
   @media (max-width: 768px) {
     width: 40px;
     height: 40px;
