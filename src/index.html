@@ -221,27 +221,27 @@
       <div class="container-text">
         <h2 class="footer__title title animation-y">My contacts</h2>
         <div class="footer__social animation-y">
-          <a class="footer__social-link" href="https://telegram.im/@Ksenchik307" target="_blank">
+          <a class="footer__social-link" href="https://telegram.im/@Ksenchik307" target="_blank" onclick="notifySocialClick('Telegram')">
             <svg>
               <use xlink:href="assets/svgSprite/sprite.svg#telegram"></use>
             </svg>@Ksenchik307
           </a>          
-          <a class="footer__social-link" href="https://wa.me/375291122817" target="_blank">
+          <a class="footer__social-link" href="https://wa.me/375291122817" target="_blank" onclick="notifySocialClick('WhatsApp')">
             <svg>
               <use xlink:href="assets/svgSprite/sprite.svg#whatsapp"></use>
             </svg>+375291122817
           </a>
-          <a class="footer__social-link" href="https://www.linkedin.com/in/oksana-sinitsa-95b900248/" target="_blank"> 
+          <a class="footer__social-link" href="https://www.linkedin.com/in/oksana-sinitsa-95b900248/" target="_blank" onclick="notifySocialClick('Linkedin')">
             <svg>
               <use xlink:href="assets/svgSprite/sprite.svg#linkedin"></use>
             </svg>Oksana Sinitsa
           </a>
-          <a class="footer__social-link" href="mailto:oksana.100@mail.ru" target="_blank"> 
+          <a class="footer__social-link" href="mailto:oksana.100@mail.ru" target="_blank" onclick="notifySocialClick('Email')">
             <svg>
               <use xlink:href="assets/svgSprite/sprite.svg#email__2"></use>
             </svg>oksana.100@mail.ru
           </a>
-          <a class="footer__social-link" target="_blank" href="https://github.com/Ksenchik"> 
+          <a class="footer__social-link" target="_blank" href="https://github.com/Ksenchik" onclick="notifySocialClick('GitHub')">
             <svg>
               <use xlink:href="assets/svgSprite/sprite.svg#github"></use>
             </svg>Ksenchik
@@ -277,6 +277,7 @@
     </div>
 
     <script src="vendor/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/main.min.js" type="module"></script>
   </body>
 </html>

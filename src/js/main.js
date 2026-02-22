@@ -2,6 +2,7 @@ import { animation } from "./animation.js";
 import { burger } from "./burger.js";
 import { modalOpen, modalWrite } from "./modal.js";
 import { createSlider } from "./slider.js";
+import {initEmailNotifications} from "./emailjs.js";
 
 document.addEventListener('DOMContentLoaded', function() {
   const preloader = document.querySelector('.loader');
@@ -15,4 +16,5 @@ function app() {
   modalOpen();
   modalWrite();
   createSlider();
+  initEmailNotifications();
 }
